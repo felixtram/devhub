@@ -48,3 +48,67 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+// !!!!!!!!!!!!!!!CUSTOM SASS SWAGGER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//.01 Global custom styles
+@mixin background-gradient($deg,$color1, $color2) {
+  background: $color1; /* Old browsers */
+  background: -moz-linear-gradient($deg, $color1 0, $color2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient($deg, $color1 0,$color2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient($deg, $color1 0,$color2 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient($deg, $color1 0,$color2 100%); /* IE10+ */
+  background: linear-gradient($deg, $color1 0,$color2 100%); /* W3C */
+}
+@mixin row-colors ($font-color, $bg-color, $h-color,$a-color,$ahover-color) {
+  color: $font-color;
+  background-color: $bg-color;
+  h1, h2, h3, h4, h5, h6 {
+    color: $h-color;
+  }
+  a {
+    color: $a-color;
+  }
+  a:hover {
+    color: $ahover-color;
+  }
+}
+@mixin global-shadow {
+  -webkit-box-shadow: 0 4px 2px 0 rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0 4px 2px 0 rgba(50, 50, 50, 0.5);
+  box-shadow: 0 4px 2px 0 rgba(50, 50, 50, 0.5);
+}
+@mixin global-transition ($sec, $ease) {
+  -moz-transition: all $sec $ease;
+  -o-transition: all $sec $ease;
+  -webkit-transition: all $sec $ease;
+  transition: all $sec $ease;
+  /*Acceptable values for $#ease = ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier()|initial|inherit*/
+}
+
+.row{
+  min-height: 400px;
+}
+.full-row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    width: 100%;
+  }
+}
+.blue {
+  @include row-colors($white, $primary-color, $white, $white, $white);
+}
+
+.gray {
+  @include row-colors($dark-gray, $light-gray, $dark-gray, $primary-color, $blue);
+}
+
+.med-gray {
+  @include row-colors($white, $medium-gray, $white, $white, $primary-color);
+}
+
+.dark-gray {
+  @include row-colors($white, $dark-gray, $white, $white, $primary-color);
+}

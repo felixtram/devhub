@@ -48,21 +48,26 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$foundation-palette: (
-  primary: #2199e8,
-  secondary: #777,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #ec5840,
-);
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #000099;
+$light-gray: #E5E5E5;
+$medium-gray: #8B8C8D;
+$dark-gray: #4D4F53;
+$black: #000009;
 $white: #fefefe;
+$light-blue: #00A9E0;
+$teal: #40C1AC;
+$blue: #0057B8;
+$orange: #FFA300;
+$red: #FD0000;
+$foundation-palette: (
+  primary: $light-blue,
+  secondary: $medium-gray,
+  success: $teal,
+  warning: $orange,
+  alert: $red,
+);
 $body-background: $white;
-$body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-color: $dark-gray;
+$body-font-family: 'Foundry Context W01 Regular', Helvetica, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -148,7 +153,7 @@ $hr-border: 1px solid $medium-gray;
 $hr-margin: rem-calc(20) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
-$list-style-type: disc;
+$list-style-type: square;
 $list-style-position: outside;
 $list-side-margin: 1.25rem;
 $list-nested-side-margin: 1.25rem;
@@ -559,7 +564,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: $primary-color;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
