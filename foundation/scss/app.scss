@@ -85,7 +85,6 @@
   transition: all $sec $ease;
   /*Acceptable values for $#ease = ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier()|initial|inherit*/
 }
-
 .row{
   min-height: 400px;
 }
@@ -93,7 +92,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-      background-size: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     
@@ -101,6 +100,7 @@
     width: 100%;
   }
 }
+
 .blue {
   @include row-colors($white, $primary-color, $white, $white, $white);
 }
@@ -115,4 +115,103 @@
 
 .dark-gray {
   @include row-colors($white, $dark-gray, $white, $white, $primary-color);
+}
+
+@mixin background-gradient($deg,$color1, $color2,$per) {
+    background: $color1; /* Old browsers */
+    background: -moz-linear-gradient($deg, $color1 0, $color2 $per); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0,$color1), color-stop($per,$color2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient($deg, $color1 0,$color2 $per); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient($deg, $color1 0,$color2 $per); /* Opera 11.10+ */
+    background: -ms-linear-gradient($deg, $color1 0,$color2 $per); /* IE10+ */
+    background: linear-gradient($deg, $color1 0,$color2 $per); /* W3C */
+}
+
+@mixin skewX($deg) {
+    -webkit-transform: skewX($deg);
+    -moz-transform: skewX($deg);
+    -ms-transform: skewX($deg);
+    -o-transform: skewX($deg);
+    transform: skewX($deg);
+}
+
+@mixin skewY($deg) {
+    -webkit-transform: skewY($deg);
+    -moz-transform: skewY($deg);
+    -ms-transform: skewY($deg);
+    -o-transform: skewY($deg);
+    transform: skewY($deg);
+}
+
+.banner-wrap {
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: auto;
+overflow: hidden;
+    
+}
+
+.banner-container {
+    position: absolute;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    h1, h2, h3, h4, h5, h5, p, ul, ol {
+        color: white;
+    }
+}
+
+.banner-container:before {
+    @include skewX(45deg);
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:hidden;
+    backface-visibility:hidden;
+    @include background-gradient(90deg,$primary-color, $blue, 130%);
+    background-color: $primary-color;
+    opacity: .8;
+    z-index: 0;
+}
+
+.banner-container {
+    top: 0;
+    left: -60%;
+    width: 125%;
+    text-align: left;   
+
+    .banner-text {
+        opacity: 1;
+        z-index: 5;
+        position: absolute;
+        max-width: 50%;
+        top: 33%;
+        padding-left: 60%;
+    }
+}
+
+@media (max-width: 640px) {
+  .banner-container:before { 
+    @include skewX(0deg);
+  }
+  .banner-container{
+      left: 0;
+      width:100%;
+      .banner-text{
+          padding:10%;
+          text-align: center;
+          max-width: 100%;
+      }
+  }
 }
