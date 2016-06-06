@@ -188,6 +188,8 @@ overflow: hidden;
 .devhub-callout {
   @include callout-base;
   @include callout($secondary-color);
+    @include global-transition(.5s,ease);
+
   padding:0 0 1rem 0;
   img{
     margin: 0 0 1rem 0;
@@ -201,5 +203,8 @@ overflow: hidden;
   @include callout-style($primary-color);
   p, h1,h2,h3,h4,h5,h6,li {
       color: $secondary-color;
+  }
+  img {
+    opacity: .85;
   }
 }
