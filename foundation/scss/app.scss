@@ -1,8 +1,13 @@
 @charset 'utf-8';
-
+//GLOBAL FONT GOODNESS. THIS MUST BE SET BEFORE THE SETTINGS IMPORT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+@font-face {
+    font-family: 'Vantiv-Icons';
+    src: url('../font/Vantiv-Icons.ttf');
+}
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import "//fast.fonts.net/cssapi/b7ca5286-aaf2-4b32-bc48-ed9760c1d66d.css";
 
 @include foundation-everything;
 
@@ -57,6 +62,10 @@
   img {
     width: 100%;
   }
+}
+
+.button{
+  text-transform: uppercase;
 }
 
 .blue {
@@ -150,20 +159,17 @@ overflow: hidden;
 
 .banner-container {
     top: 0;
-    left: -60%;
+    left: -50%;
     width: 125%;
     text-align: left;   
+}
 
     .banner-text {
         opacity: 1;
-        z-index: 5;
+        z-index: 1;
         position: absolute;
-        max-width: 50%;
-        top: 33%;
-        padding-left: 60%;
     }
-}
-
+    
 @media (max-width: 640px) {
   .banner-container:before { 
     @include skewX(0deg);
@@ -176,5 +182,24 @@ overflow: hidden;
           text-align: center;
           max-width: 100%;
       }
+  }
+}
+
+.devhub-callout {
+  @include callout-base;
+  @include callout($secondary-color);
+  padding:0 0 1rem 0;
+  img{
+    margin: 0 0 1rem 0;
+  }
+  p {
+    margin: 0 1rem 1rem 1rem;
+  }
+}
+
+.devhub-callout:hover {
+  @include callout-style($primary-color);
+  p, h1,h2,h3,h4,h5,h6,li {
+      color: $secondary-color;
   }
 }

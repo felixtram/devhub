@@ -60,14 +60,14 @@ $orange: #FFA300;
 $red: #FD0000;
 $foundation-palette: (
   primary: $light-blue,
-  secondary: $medium-gray,
+  secondary: $white,
   success: $teal,
   warning: $orange,
   alert: $red,
 );
 $body-background: $white;
 $body-font-color: $dark-gray;
-$body-font-family: 'Foundry Context W01 Regular', Helvetica, Arial, sans-serif;
+$body-font-family: 'Foundry Context', Helvetica, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1.5rem;
@@ -244,7 +244,7 @@ $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
-$button-color-alt: $black;
+$button-color-alt: $primary-color;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
@@ -266,7 +266,7 @@ $buttongroup-expand-max: 6;
 // -----------
 
 $callout-background: $white;
-$callout-background-fade: 85%;
+$callout-background-fade: 0;
 $callout-border: 1px solid rgba($dark-gray, .55);
 $callout-margin: 0 0 1rem 0;
 $callout-padding: 1rem;
