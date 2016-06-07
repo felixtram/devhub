@@ -11,20 +11,39 @@
 
 <body>
 
-    <header class="blue" data-sticky-container>
-        <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
-            <div class="title-bar-left">
-                <img src="img/logo.png" style="width: 250px">
+
+    <header class="full-row blue" >
+        <div data-sticky-container>
+            <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+                <div class="title-bar-left">
+                    <img src="img/logo.png" style="width: 250px">
+
+                </div>
+                <div class="title-bar-right show-for-medium">
+                    <ul class="menu">
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
+                        <li><a href="#" class="secondary button">Sign Up</a></li>
+                        <li><a href="#" class="secondary hollow button">Login</a></li>
+                    </ul>
+                </div>
+                <a data-open="exampleModal1" class="show-for-small-only">Click me for a modal</a>
+
             </div>
-            <div class="title-bar-right">
-                <ul class="menu float-right">
-                    <li><a href="#">One</a></li>
-                    <li><a href="#">Two</a></li>
-                    <li><a href="#">Three</a></li>
-                    <li><a href="#" class="secondary button">Sign Up</a></li>
-                    <li><a href="#" class="secondary hollow button">Login</a></li>
-                </ul>
-            </div>
+        </div>
+<!--THIS IS MENU MODAL-->
+        <div class="reveal" id="exampleModal1" data-reveal>
+            <ul class="menu vertical">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+                <li><a href="#" class="secondary button">Sign Up</a></li>
+                <li><a href="#" class="secondary hollow button">Login</a></li>
+            </ul>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>
     </header>
 
