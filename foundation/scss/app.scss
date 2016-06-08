@@ -11,9 +11,13 @@
 
 @include foundation-everything;
 
-// !!!!!!!!!!!!!!!CUSTOM SASS SWAGGER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//.01 Global custom styles
-@mixin background-gradient($deg,$color1, $color2) {
+// !!!!!!!!!!!!!!!CUSTOM SASS SWAGGER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+//*********************************
+//.00 - SASS Varialbles and Mixins 
+//*********************************
+
+@mixin background-gradient($deg,$color1, $color2) { 
   background: $color1; /* Old browsers */
   background: -moz-linear-gradient($deg, $color1 0, $color2 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
@@ -22,6 +26,7 @@
   background: -ms-linear-gradient($deg, $color1 0,$color2 100%); /* IE10+ */
   background: linear-gradient($deg, $color1 0,$color2 100%); /* W3C */
 }
+//Base mixin to define a section (row) colors
 @mixin row-colors ($font-color, $bg-color, $h-color,$a-color,$ahover-color) {
   color: $font-color;
   background-color: $bg-color;
@@ -35,22 +40,56 @@
     color: $ahover-color;
   }
 }
+
+//Easy mixin to add to any slightly elevated sections
 @mixin global-shadow {
   -webkit-box-shadow: 0 4px 2px 0 rgba(50, 50, 50, 0.4);
   -moz-box-shadow: 0 4px 2px 0 rgba(50, 50, 50, 0.4);
   box-shadow: 0 4px 2px 0 rgba(50, 50, 50, 0.4);
 }
+
+//This mixin allows you to add simple CSS3 transitions to any element, and keeps animation consistent
 @mixin global-transition ($sec, $ease) {
   -moz-transition: all $sec $ease;
   -o-transition: all $sec $ease;
   -webkit-transition: all $sec $ease;
   transition: all $sec $ease;
-  /*Acceptable values for $#ease = ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier()|initial|inherit*/
+  /*Acceptable values for $ease = ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier()|initial|inherit*/
 }
+//mixin for the infamous Vantive gradient
+@mixin background-gradient($deg,$color1, $color2,$per) {
+    background: $color1; /* Old browsers */
+    background: -moz-linear-gradient($deg, $color1 0, $color2 $per); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0,$color1), color-stop($per,$color2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient($deg, $color1 0,$color2 $per); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient($deg, $color1 0,$color2 $per); /* Opera 11.10+ */
+    background: -ms-linear-gradient($deg, $color1 0,$color2 $per); /* IE10+ */
+    background: linear-gradient($deg, $color1 0,$color2 $per); /* W3C */
+}
+//the next 2 mixins are for the Vantiv 'slice' use on a single div to create the effect
+@mixin skewX($deg) {
+    -webkit-transform: skewX($deg);
+    -moz-transform: skewX($deg);
+    -ms-transform: skewX($deg);
+    -o-transform: skewX($deg);
+    transform: skewX($deg);
+}
+@mixin skewY($deg) {
+    -webkit-transform: skewY($deg);
+    -moz-transform: skewY($deg);
+    -ms-transform: skewY($deg);
+    -o-transform: skewY($deg);
+    transform: skewY($deg);
+}
+
+//*********************************
+//.01 - GLOBAL CUSTOM STYLES 
+//*********************************
+
 .row{
- // min-height: 400px;
   padding: 2.5rem 0 1.5rem 0;
 }
+// .full-row below should be a container for .row . Using this will allow you to have a banded section with full bleed
 .full-row {
   width: 100%;
   margin-left: auto;
@@ -68,53 +107,54 @@
   text-transform: uppercase;
 }
 
+// Add these row color classes elements with to .full-row or .row classes to control the font,bg,header,and link colors
 .blue {
   @include row-colors($white, $primary-color, $white, $white, $white);
 }
-
 .gray {
   @include row-colors($dark-gray, $light-gray, $dark-gray, $primary-color, $blue);
 }
-
 .med-gray {
   @include row-colors($white, $medium-gray, $white, $white, $primary-color);
 }
-
 .dark-gray {
   @include row-colors($white, $dark-gray, $white, $white, $primary-color);
 }
 
-@mixin background-gradient($deg,$color1, $color2,$per) {
-    background: $color1; /* Old browsers */
-    background: -moz-linear-gradient($deg, $color1 0, $color2 $per); /* FF3.6+ */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0,$color1), color-stop($per,$color2)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient($deg, $color1 0,$color2 $per); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient($deg, $color1 0,$color2 $per); /* Opera 11.10+ */
-    background: -ms-linear-gradient($deg, $color1 0,$color2 $per); /* IE10+ */
-    background: linear-gradient($deg, $color1 0,$color2 $per); /* W3C */
-}
-
-@mixin skewX($deg) {
-    -webkit-transform: skewX($deg);
-    -moz-transform: skewX($deg);
-    -ms-transform: skewX($deg);
-    -o-transform: skewX($deg);
-    transform: skewX($deg);
-}
-
-@mixin skewY($deg) {
-    -webkit-transform: skewY($deg);
-    -moz-transform: skewY($deg);
-    -ms-transform: skewY($deg);
-    -o-transform: skewY($deg);
-    transform: skewY($deg);
-}
 
 .is-stuck{
   @include global-shadow;
 }
+//use these custom callouts for app modular parts and info boxes on home page
+.devhub-callout {
+  @include callout-base;
+  @include callout($secondary-color);
+  @include global-transition(.5s,ease);
 
-//HOMEPAGE SPECEFIC STYLES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  padding:0 0 1rem 0;
+  img{
+    margin: 0 0 1rem 0;
+  }
+  p {
+    margin: 0 1rem 1rem 1rem;
+  }
+}
+
+.devhub-callout:hover {
+  @include callout-style($primary-color);
+  p, h1,h2,h3,h4,h5,h6,li {
+      color: $secondary-color;
+  }
+  img {
+    opacity: .85;
+  }
+}
+
+//*********************************
+//.02 - HOMEPAGE CUSTOM STYLES 
+//*********************************
+
+//the following classes build out the responsive banner header
 .banner-wrap {
     width: 100%;
     min-height: 400px;
@@ -182,29 +222,5 @@ overflow: hidden;
           text-align: center;
           max-width: 100%;
       }
-  }
-}
-
-.devhub-callout {
-  @include callout-base;
-  @include callout($secondary-color);
-    @include global-transition(.5s,ease);
-
-  padding:0 0 1rem 0;
-  img{
-    margin: 0 0 1rem 0;
-  }
-  p {
-    margin: 0 1rem 1rem 1rem;
-  }
-}
-
-.devhub-callout:hover {
-  @include callout-style($primary-color);
-  p, h1,h2,h3,h4,h5,h6,li {
-      color: $secondary-color;
-  }
-  img {
-    opacity: .85;
   }
 }
