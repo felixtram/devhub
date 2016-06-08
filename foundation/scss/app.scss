@@ -86,9 +86,17 @@
 //.01 - GLOBAL CUSTOM STYLES 
 //*********************************
 
-.row{
-  padding: 2.5rem 0 1.5rem 0;
-}
+//these classes are used to manage icon and font sizes with more control
+.size-1x { font-size: 1rem; }
+.size-2x { font-size: 2rem; }
+.size-3x { font-size: 3rem; }
+.size-4x { font-size: 4rem; }
+.size-5x { font-size: 5rem; }
+.size-8x { font-size: 8rem; }
+.size-10x { font-size: 10rem; }
+.size-12x { font-size: 12rem; }
+
+
 // .full-row below should be a container for .row . Using this will allow you to have a banded section with full bleed
 .full-row {
   width: 100%;
@@ -101,6 +109,10 @@
   img {
     width: 100%;
   }
+}
+
+.row{
+  padding: 2.5rem 0 1.5rem 0;
 }
 
 .button{
@@ -125,6 +137,7 @@
 .is-stuck{
   @include global-shadow;
 }
+
 //use these custom callouts for app modular parts and info boxes on home page
 .devhub-callout {
   @include callout-base;
