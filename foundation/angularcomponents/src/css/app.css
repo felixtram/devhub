@@ -3524,6 +3524,9 @@ table.hover tr:nth-of-type(even):hover {
 .clearfix::after {
   clear: both; }
 
+.size-05x {
+  font-size: 0.75rem; }
+
 .size-1x {
   font-size: 1rem; }
 
@@ -3555,11 +3558,10 @@ table.hover tr:nth-of-type(even):hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+  .full-row .row {
+    padding: 2.5rem 0 1.5rem 0; }
   .full-row img {
     width: 100%; }
-
-.row {
-  padding: 2.5rem 0 1.5rem 0; }
 
 .button {
   text-transform: uppercase; }
@@ -3643,6 +3645,18 @@ table.hover tr:nth-of-type(even):hover {
     color: #fefefe; }
   .devhub-callout:hover img {
     opacity: .85; }
+
+footer li:first-child {
+  font-weight: bold;
+  font-size: 1rem; }
+
+@media (max-width: 640px) {
+  .full-row {
+    background-blend-mode: overlay; }
+  footer .columns {
+    text-align: center; }
+  footer.full-row .row {
+    padding: 15px 0px 0px 0px; } }
 
 .banner-wrap {
   width: 100%;

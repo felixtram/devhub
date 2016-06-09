@@ -87,6 +87,7 @@
 //*********************************
 
 //these classes are used to manage icon and font sizes with more control
+.size-05x { font-size: 0.75rem; }
 .size-1x { font-size: 1rem; }
 .size-2x { font-size: 2rem; }
 .size-3x { font-size: 3rem; }
@@ -105,15 +106,16 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    .row{
+      padding: 2.5rem 0 1.5rem 0;
+    }
+
     
   img {
     width: 100%;
   }
 }
 
-.row{
-  padding: 2.5rem 0 1.5rem 0;
-}
 
 .button{
   text-transform: uppercase;
@@ -167,6 +169,22 @@
 //.02 - HOMEPAGE CUSTOM STYLES 
 //*********************************
 
+footer li:first-child {
+    font-weight: bold;
+    font-size: 1rem;
+}
+@media (max-width: 640px) {
+  .full-row{
+    background-blend-mode: overlay;
+  }
+  footer .columns{
+    text-align:center;
+  }
+  footer.full-row .row{
+    padding: 15px 0px 0px 0px;
+  }
+}
+
 //the following classes build out the responsive banner header
 .banner-wrap {
     width: 100%;
@@ -178,8 +196,7 @@
     background-repeat: no-repeat;
     padding: 0px;
     margin: auto;
-overflow: hidden;
-    
+    overflow: hidden;
 }
 
 .banner-container {
