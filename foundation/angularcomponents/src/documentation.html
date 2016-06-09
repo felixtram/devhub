@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta charset="UTF-8">
+        <title>App Integrate Prototype</title>
+        <link rel="stylesheet" href="././css/app.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    
+
+    
+    <body ng-app="myapps">
+        <div ng-controller="myappsCtrl as ctrl">
+            <header>
+                <h1> Angular Components Guide </h1>
+            
+                <h2> Components used on the App Integrate Page </h2>
+            </header>
+            
+    
+            <div class="sidebar">   
+                <nav>
+                    <ul class="sidenav">
+                        <li><strong>Components</strong></li>
+                        <hr>
+                        <li><a href="#vbutton">vbutton</a></li>
+                        <li><a href="#vprogress">vprogress</a></li>
+                        <li><a href="#vicon">vicon</a></li>
+                        <li><a href="#vicons">vicons</a></li>
+                        <li><a href="#panel">panel</a></li>
+                        <li><a href="#appheader">appheader</a></li>
+                        <li><a href="#tabs">tabs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="main">
+                <div id="vbutton" class = "example">
+                    <h3> vbutton component </h3>
+                    <div class="attributes">
+                        <p> <h5> link </h5> 
+                        &emsp;link is the url or path to the link 
+                        <h5> displaytext </h5>
+                        &emsp;display text is the text displayed on the button </p>
+                    </div>
+                    <h5> Example </h5>
+                    <div>
+                        <code> &ltvbutton link="example.com" displaytext="Example"&gt &ltvbutton&gt </code>
+                    </div>
+                    <br>
+                    <div class = "gen">
+                        <vbutton link="http://www.google.com" displaytext="Example"> </vbutton>
+                    </div>
+                </div>
+                
+                <div id="vprogress" class="example">
+                    <h3> vprogress component</h3>
+                    <div class="attributes">
+                        <p><h5> percentage </h5>
+                        &emsp; number representing percentage complete </p>
+                    </div>
+                    <h5> Example </h5>
+                    <div>
+                        <code> &ltvprogress  percentage=50&gt &ltvprogress&gt </code>    
+                    </div>    
+                    <br>
+                    <div class="gen"> 
+                        <vprogress percentage=50> </vprogress>
+                    </div>
+                </div>
+                
+                <div id="vicon" class="example">
+                    <h3> vicon component</h3>
+                    <div class="attributes">
+                        <p><h5> testsuite </h5>
+                        &emsp;testsuite as a string </p>
+                    </div>
+                    <h5> Example </h5>
+                    <div>
+                        <code> &ltvicon  testsuite=restaurant&gt &ltvicon&gt </code>    
+                    </div>    
+                    <br>
+                    <div class="gen"> 
+                        <vicon testsuite="restaurant"> </vicon>
+                    </div>
+                </div>
+                
+                <div id="vicons" class="example">
+                    <h3> vicons component</h3>
+                    <div class="attributes">
+                        <p> <h5> testsuites </h5>
+                        &emsp;array of test suite strings </p>
+                    </div>
+                    <h5> Example </h5>
+                    <div>
+                        <code> &ltvicons  testsuites='["restaurant", "ecommerce"]'&gt &ltvicons&gt </code>    
+                    </div>    
+                    <br>
+                    <div class="gen"> 
+                        <vicons testsuites='["restaurant", "ecommerce"]'> </vicons>
+                    </div>
+                </div>
+        
+                <div id="panel" class="example">
+                    <h3> panel component</h3>
+                    <div class="attributes">
+                        <p><h5> app </h5>
+                        &emsp;json object with app info </p>
+                    </div>
+                    <h5> Example </h5>
+                    <div>
+                    <pre>
+        &ltpanel  app=
+                            
+            '{
+                "name" : "TestApp2",
+                "description" : "description for test app 2",
+                "percentage" : 20,
+                "suites" : [ "ecommerce", "gift", "restaurant"]
+            }'&gt 
+        &ltpanel&gt
+                    </pre>
+                            
+                    </div>    
+                    <br>
+                    <div class="gen"> 
+                        <panel app='                  {
+                             "name" : "TestApp2",
+                             "description" : "description for test app 2",
+                             "percentage" : 20,
+                             "suites" : [ "ecommerce", "gift", "restaurant"]
+                          }'> </panel>
+                    </div>
+                </div>
+                
+                <div id="appheader" class="example">
+                    <h3> appheader component</h3>
+                    <div class="attributes">
+                        <p> Input: N/A </p>
+                        <p> &emsp;Will generate the static "app header" content </p>
+                    </div>
+                    <h5> Example </h5>
+                    <div>
+                        <code> &ltappheader&gt &ltappheader&gt </code>    
+                    </div>    
+                    <br>
+                    <div class="gen"> 
+                        <appheader> </appheader>
+                    </div>
+                </div>
+                
+                <div id="tabs" class="example">
+                    
+                    <h3> tabs component</h3>
+                    
+                    <div class="attributes">
+                        <h5> Attributes/Headers </h5>
+            
+                        <p> <h5>tabinfo</h5> json array defining the tabs and what view they show
+                            <ul>
+                                <li> 
+                                    <h6>id</h6>
+                                    The id of the div to show when the tab is selected
+                                </li>
+                                <li> 
+                                    <h6>text</h6>
+                                    Display text of the tab        
+                                </li>
+                                <li> 
+                                    <h6>active</h6>
+                                    Whether the tab should be active by default
+                                </li>
+                            </ul>
+                        </p>
+                        <p>
+                            <h5>content</h5> &emsp;array of application data
+                        </p>
+                    </div>
+                    
+                    
+                    <h5> Example </h5>
+                    <div>
+                        <pre>
+        &lttabs 
+            tabinfo=
+            '
+                [{"id" : "inprogress", "text" : "In Progress", active: "is-active"},
+                {"id" : "completed", "text" : "Completed", active: ""}]
+            ' 
+            content=
+            '
+                {
+                  "inprogress" : [
+                      {
+                         "name" : "Dino-Fighter",
+                         "description" : "Description for Dino-Fighter app",
+                         "percentage" : 10,
+                         "suites" : [ "ecommerce", "gift"]
+                      }, 
+                      {
+                         "name" : "TestApp2",
+                         "description" : "description for test app 2",
+                         "percentage" : 20,
+                         "suites" : [ "ecommerce", "gift", "restaurant"]
+                      }
+                    ],
+                  "completed" : [
+                      {
+                         "name" : "TestApp3",
+                         "description" : "description for test app 3",
+                         "percentage" : 100,
+                         "suites" : [ "ecommerce", "gift"]
+                      }, {
+                          
+                         "name" : "Unicorns Suck",
+                         "description" : "Description for unicorns suck",
+                         "percentage" : 100,
+                         "suites" : [ "ecommerce", "restaurant"]
+                      }
+                    ]
+                }
+            ' 
+        &gt
+        &lt/tabs&gt   
+                          </pre>
+                    </div>    
+                    <br>
+                    <div class="gen"> 
+                        <tabs tabinfo='[{"id" : "inprogress", "text" : "In Progress", active: "is-active"},
+                            {"id" : "completed", "text" : "Completed", active: ""}]' content="ctrl.apps">
+                        </tabs>
+                    </div>
+                </div>
+                
+            </div> <!-- main ends here -->
+
+        </div>
+        
+        
+        <!--
+        <div ng-controller="myappsCtrl as ctrl">
+            <appheader></appheader>
+            <tabs names='[{"id" : "inprogress", "text" : "In Progress", active: "is-active"},
+                {"id" : "completed", "text" : "Completed", active: ""}]' content="ctrl.apps">
+            </tabs>
+        </div> -->
+        
+        <style>
+            h1, h2{
+                text-align: center;
+            }
+            p{
+                margin-bottom: 0px;
+            }
+            body{
+                width:100%;
+                padding:50px;
+                min-width:500px;
+            }
+            .attributes{
+                background-color:linen;
+                padding:10px;
+                margin-bottom:5px;
+            }
+            .example{
+                background-color: aliceblue;
+                margin: 20px auto;
+                padding:20px;
+                width:80%;
+            }
+            .gen{
+                border-style: dashed;
+                border-width: 1px;
+                background-color: #e6e6e6;
+                border: 1px solid #cacaca;
+                display:table;
+                margin:auto;
+                padding: 15px;
+            }
+            .button{
+                margin: 5px;
+            }
+            .progress{
+                width:150px;
+            }
+            vicon{
+                font-size:30px;
+                margin:5px;
+            }
+            pre{
+                padding:10px;
+                background-color: #e6e6e6;
+                border: 1px solid #cacaca;
+            }
+            /* App Header style*/
+            .content{
+                text-align: center;
+                margin:auto auto;
+                padding-right:5%;
+                padding-left:5%;
+            }
+            
+            .appheader{
+                min-height: 400px;
+                display:inline-flex;
+            }
+            
+            /* stuff jeff added */
+            .sidenav li {
+                list-style-type: none;
+            }
+            
+            .sidenav li a {
+                display: block;
+            }
+            
+            .sidebar {
+                width: 10%;
+                display: inline-block;
+                height: 100%;
+                position: fixed;
+                overflow: auto;
+            }
+            
+            .main {
+                width: 90%;
+                margin-top: 200px;
+                margin-left: 10%;
+            }
+            
+            hr {
+                margin: 5px 0px;
+            }
+            
+            header {
+                height: 200px;
+                top: 0;
+                width: 100%;
+                position: fixed;
+                z-index: 5;
+                background: white;
+            }
+
+        </style>
+        <!-- Angular Source Files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script> 
+        
+        <!-- Foundation Source Files -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
+       <!-- Angular Components -->
+       <script src="myapps.module.js"></script>
+       <script src="myapps-fakedata.service.js"></script>
+       <script src="myapps.controller.js"></script>
+       <script src="tabs.controller.js"> </script>
+       <script src="tabs.directive.js"> </script>
+       <script src="tabs.component.js"> </script>
+       <script src="vbutton.component.js"></script>
+       <script src="vprogress.component.js"></script>
+       <script src="vicon.service.js"></script>
+       <script src="vicon.controller.js"></script>
+       <script src="vicon.component.js"></script>
+       <script src="vicons.component.js"></script>
+       <script src="panel.component.js"> </script>
+       <script src="appheader.component.js"> </script>
+       <script> $(document).foundation(); </script>
+   </body>
+</html>
+

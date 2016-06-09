@@ -18,6 +18,9 @@ gulp.task('sass', function() {
     // For windows path
      .pipe(gulp.dest('C:/MAMP/htdocs/vantiv/sites/all/themes/clean7/foundation_clean7/css')
          .on('error', $.sass.logError))
+//Path for the angular components
+              .pipe(gulp.dest('angularcomponents/src/css')
+         .on('error', $.sass.logError))
 
     // For Mac path
    // .pipe(gulp.dest('/Applications/MAMP/htdocs/vantiv/sites/all/themes/clean7/foundation_clean7/css')
