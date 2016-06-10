@@ -12,9 +12,16 @@
       
       function lookupObj(){
           return {
-              "restaurant" : "fa fa-beer",
-              "ecommerce" : "fa fa-money",
-              "gift" : "fa fa-archive"
+              "Restaurant bundle" : "icon vantiv-silverware",
+              "Restaurant Element" : "icon vantiv-silverware",
+              "Retail bundle" : "icon vantiv-shoppingcart",
+              "Retail Element" : "icon vantiv-shoppingcart",
+              "Gift" : "icon vantiv-gift",
+              "Gift - Litle" : "icon vantiv-gift",
+              "Ecommerce bundle (ODP)" : "icon vantiv-laptop",
+              "ODP Ecommerce" : "icon vantiv-laptop",
+              "Ecommerce DevHub" : "icon vantiv-laptop"
+              // Ecommerce DevHub, Ecommerce bundle(ODP)
           };
       }
       

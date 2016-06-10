@@ -6,10 +6,10 @@
         <meta charset="UTF-8">
         <title>App Integrate Prototype</title>
         <link rel="stylesheet" href="././css/app.css">
+        <link rel="stylesheet" href="././css/documentation.css">
+        <link rel="stylesheet" href="././css/font/vantiv-icons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
-    
-
     
     <body ng-app="myapps">
         <div ng-controller="myappsCtrl as ctrl">
@@ -19,7 +19,6 @@
                 <h2> Components used on the App Integrate Page </h2>
             </header>
             
-    
             <div class="sidebar">   
                 <nav>
                     <ul class="sidenav">
@@ -47,7 +46,7 @@
                     </div>
                     <h5> Example </h5>
                     <div>
-                        <code> &ltvbutton link="example.com" displaytext="Example"&gt &ltvbutton&gt </code>
+                        <code> &ltvbutton link="http://www.google.com" displaytext="Example"&gt &lt/vbutton&gt </code>
                     </div>
                     <br>
                     <div class = "gen">
@@ -63,7 +62,7 @@
                     </div>
                     <h5> Example </h5>
                     <div>
-                        <code> &ltvprogress  percentage=50&gt &ltvprogress&gt </code>    
+                        <code> &ltvprogress  percentage=50&gt &lt/vprogress&gt </code>    
                     </div>    
                     <br>
                     <div class="gen"> 
@@ -79,7 +78,7 @@
                     </div>
                     <h5> Example </h5>
                     <div>
-                        <code> &ltvicon  testsuite=restaurant&gt &ltvicon&gt </code>    
+                        <code> &ltvicon  testsuite=restaurant&gt &lt/vicon&gt </code>    
                     </div>    
                     <br>
                     <div class="gen"> 
@@ -95,11 +94,11 @@
                     </div>
                     <h5> Example </h5>
                     <div>
-                        <code> &ltvicons  testsuites='["restaurant", "ecommerce"]'&gt &ltvicons&gt </code>    
+                        <code> &ltvicons  testsuites='["Restaurant bundle", "Retail bundle", "Gift", "Ecommerce bundle (ODP)", "ODP Ecommerce", "Ecommerce DevHub"]'&gt &lt/vicons&gt </code>    
                     </div>    
                     <br>
                     <div class="gen"> 
-                        <vicons testsuites='["restaurant", "ecommerce"]'> </vicons>
+                        <vicons testsuites='["Restaurant bundle", "Retail bundle", "Gift", "Ecommerce bundle (ODP)", "ODP Ecommerce", "Ecommerce DevHub"]'> </vicons>
                     </div>
                 </div>
         
@@ -111,7 +110,7 @@
                     </div>
                     <h5> Example </h5>
                     <div>
-                    <pre>
+                        <pre>
         &ltpanel  app=
                             
             '{
@@ -120,8 +119,8 @@
                 "percentage" : 20,
                 "suites" : [ "ecommerce", "gift", "restaurant"]
             }'&gt 
-        &ltpanel&gt
-                    </pre>
+        &lt/panel&gt
+                        </pre>
                             
                     </div>    
                     <br>
@@ -143,7 +142,7 @@
                     </div>
                     <h5> Example </h5>
                     <div>
-                        <code> &ltappheader&gt &ltappheader&gt </code>    
+                        <code> &ltappheader&gt &lt/appheader&gt </code>    
                     </div>    
                     <br>
                     <div class="gen"> 
@@ -238,116 +237,9 @@
 
         </div>
         
-        
-        <!--
-        <div ng-controller="myappsCtrl as ctrl">
-            <appheader></appheader>
-            <tabs names='[{"id" : "inprogress", "text" : "In Progress", active: "is-active"},
-                {"id" : "completed", "text" : "Completed", active: ""}]' content="ctrl.apps">
-            </tabs>
-        </div> -->
-        
-        <style>
-            h1, h2{
-                text-align: center;
-            }
-            p{
-                margin-bottom: 0px;
-            }
-            body{
-                width:100%;
-                padding:50px;
-                min-width:500px;
-            }
-            .attributes{
-                background-color:linen;
-                padding:10px;
-                margin-bottom:5px;
-            }
-            .example{
-                background-color: aliceblue;
-                margin: 20px auto;
-                padding:20px;
-                width:80%;
-            }
-            .gen{
-                border-style: dashed;
-                border-width: 1px;
-                background-color: #e6e6e6;
-                border: 1px solid #cacaca;
-                display:table;
-                margin:auto;
-                padding: 15px;
-            }
-            .button{
-                margin: 5px;
-            }
-            .progress{
-                width:150px;
-            }
-            vicon{
-                font-size:30px;
-                margin:5px;
-            }
-            pre{
-                padding:10px;
-                background-color: #e6e6e6;
-                border: 1px solid #cacaca;
-            }
-            /* App Header style*/
-            .content{
-                text-align: center;
-                margin:auto auto;
-                padding-right:5%;
-                padding-left:5%;
-            }
-            
-            .appheader{
-                min-height: 400px;
-                display:inline-flex;
-            }
-            
-            /* stuff jeff added */
-            .sidenav li {
-                list-style-type: none;
-            }
-            
-            .sidenav li a {
-                display: block;
-            }
-            
-            .sidebar {
-                width: 10%;
-                display: inline-block;
-                height: 100%;
-                position: fixed;
-                overflow: auto;
-            }
-            
-            .main {
-                width: 90%;
-                margin-top: 200px;
-                margin-left: 10%;
-            }
-            
-            hr {
-                margin: 5px 0px;
-            }
-            
-            header {
-                height: 200px;
-                top: 0;
-                width: 100%;
-                position: fixed;
-                z-index: 5;
-                background: white;
-            }
-
-        </style>
         <!-- Angular Source Files -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script> 
-        
         <!-- Foundation Source Files -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
        <!-- Angular Components -->
