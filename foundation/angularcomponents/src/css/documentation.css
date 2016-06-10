@@ -1,0 +1,94 @@
+h1, h2{
+    text-align: center;
+}
+p{
+    margin-bottom: 0px;
+}
+body{
+    width:100%;
+    padding:50px;
+    min-width:500px;
+}
+.attributes{
+    background-color:linen;
+    padding:10px;
+    margin-bottom:5px;
+}
+.example{
+    background-color: aliceblue;
+    margin: 20px auto;
+    padding:20px;
+    width:80%;
+}
+.gen{
+    border-style: dashed;
+    border-width: 1px;
+    background-color: #e6e6e6;
+    border: 1px solid #cacaca;
+    display:table;
+    margin:auto;
+    padding: 15px;
+}
+.button{
+    margin: 5px;
+}
+.progress{
+    width:150px;
+}
+vicon{
+    font-size:50px;
+    margin:5px;
+}
+pre{
+    padding:10px;
+    background-color: #e6e6e6;
+    border: 1px solid #cacaca;
+}
+/* App Header style*/
+.content{
+    text-align: center;
+    margin:auto auto;
+    padding-right:5%;
+    padding-left:5%;
+}
+
+.appheader{
+    min-height: 400px;
+    display:inline-flex;
+}
+
+/* stuff jeff added */
+.sidenav li {
+    list-style-type: none;
+}
+
+.sidenav li a {
+    display: block;
+}
+
+.sidebar {
+    width: 10%;
+    display: inline-block;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+
+.main {
+    width: 90%;
+    margin-top: 200px;
+    margin-left: 10%;
+}
+
+hr {
+    margin: 5px 0px;
+}
+
+header {
+    height: 200px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    background: white;
+}
