@@ -98,6 +98,19 @@
 .size-12x { font-size: 12rem; }
 
 
+//Special color fill classes for the SVGs and Icon fonts
+  .svg-white {
+  fill:white;
+}
+
+.svg-lblue {
+  fill:#00A9E0;
+}
+
+.svg-black {
+  fill:#000009;
+}
+
 // .full-row below should be a container for .row . Using this will allow you to have a banded section with full bleed
 .full-row {
   width: 100%;

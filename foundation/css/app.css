@@ -3551,6 +3551,15 @@ table.hover tr:nth-of-type(even):hover {
 .size-12x {
   font-size: 12rem; }
 
+.svg-white {
+  fill: white; }
+
+.svg-lblue {
+  fill: #00A9E0; }
+
+.svg-black {
+  fill: #000009; }
+
 .full-row {
   width: 100%;
   margin-left: auto;
