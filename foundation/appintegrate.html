@@ -1,0 +1,208 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Prototype</title>
+    <link rel="stylesheet" href="css/vantiv-icons.css">
+    <link rel="stylesheet" href="font/foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="font/foundation-icons/foundation-icons.css">
+</head>
+
+<body>
+
+<!-- ********************************** HEADER -->
+    <header class="full-row blue">
+        <div data-sticky-container>
+            <div class="top-bar stacked-for-medium" data-sticky data-sticky-on="small" data-options="marginTop:0;" style="width:100%">
+                <div class="top-bar-title">
+                    <a href="#"><img src="img/logo.png" style="width: 300px"></a>
+                </div>
+                <div class="top-bar-right show-for-medium">
+                    <ul class="menu">
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#" class="secondary button">Sign Out</a></li>
+                    </ul>
+                </div>
+                                
+                    <a href="#" data-open="mobileMenu" class="show-for-small-only float-right"><i class="fi-list"></i> Menu</a>
+            </div>
+        </div>
+    </header>
+<!-- ********************************** HEADER END-->
+<div ng-app="myapps">
+    <div class="full-row">
+        <div class="row">
+            <div class="small-12 medium-12 large-12 column">
+                <appheader> </appheader>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-row">
+        <div class="row">
+
+            <div ng-controller="myappsCtrl as ctrl">
+            <tabs tabinfo='[{"id" : "inprogress", "text" : "In Progress", active: "is-active"},
+                {"id" : "completed", "text" : "Completed", active: ""}]' content="ctrl.apps">
+            </tabs>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+  
+  <!-- ********************************** FOOTER -->
+    <div class="full-row">
+        <div class="row">
+            <div class="small-12 large-6 column">
+                <h3>Still Have Questions?
+                </h3>
+                <br>
+                <p>Our goal is to help you integrate your application as quickly as possible with our APIs. If you have not
+                    found an answer in our FAQs or Documentation please email our support team using the form or give us
+                    a call at 1-877-543-2156 .
+                </p>
+            </div>
+            <div class="small-12 large-6 column">
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea rows="4" placeholder="Message" required></textarea>
+                    <input type="submit" class="button float-right" value="Submit Form">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="full-row med-gray">
+        <div class="row small-up-1 medium-up-4 large-up-6 columns">
+            <div class="column size-05x">
+                <ul class="no-bullet">
+                    <li>Docs </li>
+                    <li><a href="www.https://google.com"> getting started guide </a></li>
+                    <li><a href="www.https://google.com"> FAQs</a></li>
+                    <li><a href="www.https://google.com"> Sample Code</a></li>
+                </ul>
+            </div>
+            <div class="column size-05x">
+                <ul class="no-bullet">
+                    <li>Support </li>
+                    <li><a href="www.https://google.com"> Support Articles</a></li>
+                    <li><a href="www.https://google.com"> API Status</a></li>
+                    <li> <a href="www.https://google.com"> Site Map</a></li>
+                </ul>
+            </div>
+            <div class="column size-05x">
+                <ul class="no-bullet">
+                    <li>API Reference </li>
+                    <li><a href="www.https://google.com"> PWS</a></li>
+                    <li><a href="www.https://google.com"> Element </a></li>
+                    <li><a href="www.https://google.com"> eComm</a></li>
+                </ul>
+            </div>
+            <div class="column size-05x">
+                <ul class="no-bullet">
+                    <li>About DevHub </li>
+                    <li><a href="www.https://vantiv.com"> Vantiv.com </a></li>
+                    <li><a href="www.https://google.com"> Vantiv Developers</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="row small-up-1 medium-up-2 large-up-4 columns size-05x">
+            <div class="column">
+                <a href="#"> Privacy & Legal </a>
+            </div>
+            <div class="column">
+                <a href='#'> &copy; 2016 Vantiv. All Rights Reserved. </a>
+            </div>
+        </div>
+    </footer>
+    
+<!-- ********************************** FOOTER END -->
+
+    
+<!-- ********************************** MODALS -->
+
+
+    <!--START mobileMenu MODAL-->
+    <div class="large reveal" id="mobileMenu" data-reveal>
+        <div class="row">
+            <div class="medium-8 medium-centered large-6 large-centered columns">
+                        <h2>Menu</h2>
+                <ul class="menu vertical">
+                    <li><a href="#" class="button">Support</a></li>
+                    <li><a href="#" class="button">API Reference</a></li>
+                    <li><a href="#" class="hollow button">Sign Up</a></li>
+                    <li><a href="#" data-open="loginModal" class="hollow button">Login</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!--END mobileMenu MODAL-->
+    <!-- ********************************** END MODALS -->
+
+
+
+
+<style>
+/**************** STYLE FOR APP INTEGRATE PAGE */
+.welcome{
+    text-align: center;
+    margin:auto auto;
+    padding-right:5%;
+    padding-left:5%;
+}
+.appheader{
+    min-height: 400px;
+    display:inline-flex;
+}
+
+/* should button padding be global? */
+.welcome .primary.button{
+    margin: 10px
+}
+</style>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+
+        <!-- Angular Source Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script> 
+
+   <!-- Angular Components -->
+   <script src="/angularcomponents/src/myapps.module.js"></script>
+   <script src="/angularcomponents/src/myapps-fakedata.service.js"></script>
+   <script src="/angularcomponents/src/myapps.controller.js"></script>
+   <script src="/angularcomponents/src/tabs.controller.js"> </script>
+   <script src="/angularcomponents/src/tabs.directive.js"> </script>
+   <script src="/angularcomponents/src/tabs.component.js"> </script>
+   <script src="/angularcomponents/src/vbutton.component.js"></script>
+   <script src="/angularcomponents/src/vprogress.component.js"></script>
+   <script src="/angularcomponents/src/vicon.service.js"></script>
+   <script src="/angularcomponents/src/vicon.controller.js"></script>
+   <script src="/angularcomponents/src/vicon.component.js"></script>
+   <script src="/angularcomponents/src/vicons.component.js"></script>
+   <script src="/angularcomponents/src/panel.component.js"> </script>
+   <script src="/angularcomponents/src/appheader.component.js"> </script>
+
+</body>
+
+</html>

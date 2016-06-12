@@ -7,7 +7,7 @@
       bindings: {
         percentage: '@'
       },
-      templateUrl: 'vprogress.html'
+      templateUrl: '/angularcomponents/src/vprogress.html'
     });
 
 })();

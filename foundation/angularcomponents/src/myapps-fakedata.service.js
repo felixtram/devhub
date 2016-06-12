@@ -17,13 +17,13 @@
                      "name" : "Dino-Fighter",
                      "description" : "Description for Dino-Fighter app",
                      "percentage" : 10,
-                     "suites" : [ "ecommerce", "gift"]
+                     "suites" : [ "Restaurant bundle", "Retail bundle"]
                   }, 
                   {
                      "name" : "TestApp2",
                      "description" : "description for test app 2",
                      "percentage" : 20,
-                     "suites" : [ "ecommerce", "gift", "restaurant"]
+                     "suites" : [ "Gift", "Ecommerce bundle (ODP)", "restaurant"]
                   }
                 ],
               "completed" : [

@@ -7,7 +7,7 @@
       bindings: {
         app: '='
       },
-      templateUrl: 'panel.html'
+      templateUrl: '/angularcomponents/src/panel.html'
     });
 
 })();
