@@ -24,7 +24,7 @@ app.use('/', express.static(path.join(__dirname, '/')));
 // error handling needs to go last
 app.use(errorHandler);
 
-app.listen(8000, function () {
+app.listen(process.env.PORT, function () {
   console.log('Example app listening on port 8000!');
 });
 

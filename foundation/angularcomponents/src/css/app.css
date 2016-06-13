@@ -2804,8 +2804,8 @@ body {
   margin-left: 0.5rem; }
 
 .progress {
-  background-color: #8B8C8D;
-  height: 1rem;
+  background-color: #E5E5E5;
+  height: 7px;
   margin-bottom: 1.5rem;
   border-radius: 0; }
   .progress.primary .progress-meter {

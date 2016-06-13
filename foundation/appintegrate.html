@@ -161,39 +161,49 @@
 
 <style>
 /**************** STYLE FOR APP INTEGRATE PAGE */
+/* style for app header */
 .welcome{
     text-align: center;
     margin:auto auto;
     padding-right:5%;
     padding-left:5%;
 }
+/* height for app header */
 .appheader{
     min-height: 400px;
     display:inline-flex;
 }
 
 /* should button margin be global? */
+/* padding for buttons in appheader */
 .welcome .primary.button{
     margin: 10px
 }
 
+/* fix last app floating right */
 .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
     float: left;
 }
 
+/* style for one app */
 .callout{
     width:300px;
     height:350px;
     display: inline-block;
-    margin: 50px;
+    margin: 15px;
     vertical-align: top;
 }
+/* get tabs to display in the center */
 .tabs{
     margin:auto;
     display: table; 
+    border: none;
+}
+.tabs li{
+    margin-right: 20px;
 }
 .icon{
-    color: #8B8C8D;
+    color: #8B8C8D; /* light grey variable */
 }
 </style>
 
