@@ -8,9 +8,16 @@
 <div class="full-row gray">
 	<div class="row gray" data-equalizer>
 
+
 		    <div class="tabs-panel {{name.active}}" tabs-dir ng-repeat="name in $ctrl.tabinfo" id="{{name.id}}">
-		        <panel class="small-12  medium-4 columns text-center " ng-repeat="item in $ctrl.content[name.id]" app="item"> </panel>
+		        <panel class="text-center " ng-repeat="item in $ctrl.content[name.id]" app="item"> </panel>
 		    </div>
+
+<!--
+		    <div class="tabs-panel {{name.active}}" tabs-dir ng-repeat="name in $ctrl.tabinfo" id="{{name.id}}">
+		        <panel class="small-8 medium-5 large-3 columns text-center " ng-repeat="item in $ctrl.content[name.id]" app="item"> </panel>
+		    </div>
+		    -->
 	</div>
 </div>
 

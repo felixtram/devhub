@@ -45,7 +45,7 @@
     </div>
 
     <div class="full-row">
-        <div class="row">
+        <div>
 
             <div ng-controller="myappsCtrl as ctrl">
             <tabs tabinfo='[{"id" : "inprogress", "text" : "In Progress", active: "is-active"},
@@ -54,9 +54,8 @@
         </div>
         </div>
     </div>
-    </div>
+</div>
 
-    </div>
 
   
   <!-- ********************************** FOOTER -->
@@ -117,7 +116,7 @@
             </div>
 
         </div>
-        <div class="row small-up-1 medium-up-2 large-up-4 columns size-05x">
+        <div class="row small-up-1 medium-up-2 large-up-4 columns size-05x med-gray">
             <div class="column">
                 <a href="#"> Privacy & Legal </a>
             </div>
@@ -125,6 +124,7 @@
                 <a href='#'> &copy; 2016 Vantiv. All Rights Reserved. </a>
             </div>
         </div>
+
     </footer>
     
 <!-- ********************************** FOOTER END -->
@@ -170,9 +170,25 @@
     display:inline-flex;
 }
 
-/* should button padding be global? */
+/* should button margin be global? */
 .welcome .primary.button{
     margin: 10px
+}
+
+.column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
+    float: left;
+}
+
+.callout{
+    width:300px;
+    height:350px;
+    display: inline-block;
+    margin: 50px;
+    vertical-align: top;
+}
+.tabs{
+    margin:auto;
+    display: table; 
 }
 </style>
 
