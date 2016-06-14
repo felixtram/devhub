@@ -2805,7 +2805,7 @@ body {
 
 .progress {
   background-color: #E5E5E5;
-  height: 7px;
+  height: 5px;
   margin-bottom: 1.5rem;
   border-radius: 0; }
   .progress.primary .progress-meter {
@@ -3223,7 +3223,7 @@ table.hover tr:nth-of-type(even):hover {
   float: left; }
   .tabs-title > a {
     display: block;
-    padding: 1.25rem 1.5rem;
+    padding: 1rem 1rem;
     line-height: 1;
     font-size: 0.96591rem; }
     .tabs-title > a:hover {

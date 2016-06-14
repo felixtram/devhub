@@ -16,21 +16,23 @@
 
 <!-- ********************************** HEADER -->
     <header class="full-row blue">
-        <div data-sticky-container>
-            <div class="top-bar stacked-for-medium" data-sticky data-sticky-on="small" data-options="marginTop:0;" style="width:100%">
-                <div class="top-bar-title">
-                    <a href="#"><img src="img/logo.png" style="width: 300px"></a>
+        <div class="hcontents">
+            <div data-sticky-container>
+                <div class="top-bar stacked-for-medium" data-sticky data-sticky-on="small" data-options="marginTop:0;" style="width:100%">
+                    <div class="top-bar-title">
+                        <a href="#"><img src="img/logo.png" style="width: 300px"></a>
+                    </div>
+                    <div class="top-bar-right show-for-medium">
+                        <ul class="menu">
+                            <li><a href="#">Docs</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#" class="primary button">Sign Out</a></li>
+                        </ul>
+                    </div>
+                                    
+                        <a href="#" data-open="mobileMenu" class="show-for-small-only float-right"><i class="fi-list"></i> Menu</a>
                 </div>
-                <div class="top-bar-right show-for-medium">
-                    <ul class="menu">
-                        <li><a href="#">Docs</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">API Reference</a></li>
-                        <li><a href="#" class="primary button">Sign Out</a></li>
-                    </ul>
-                </div>
-                                
-                    <a href="#" data-open="mobileMenu" class="show-for-small-only float-right"><i class="fi-list"></i> Menu</a>
             </div>
         </div>
     </header>
@@ -55,6 +57,7 @@
         </div>
     </div>
 </div>
+
 
 
   
@@ -161,6 +164,10 @@
 
 <style>
 /**************** STYLE FOR APP INTEGRATE PAGE */
+.hcontent{
+    max-width: 1080px;
+    margin:auto;
+}
 /* style for app header */
 .welcome{
     text-align: center;
@@ -177,17 +184,12 @@
 /* should button margin be global? */
 /* padding for buttons in appheader */
 .welcome .primary.button{
-    margin: 10px
-}
-
-/* fix last app floating right */
-.column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
-    float: left;
+    margin: 8px
 }
 
 /* style for one app */
 .callout{
-    width:270px;
+    width:300px;
     height:350px;
     display: inline-block;
 }
@@ -197,19 +199,59 @@
     display: table; 
     border: none;
 }
+/* set icon color to light grey variable */
 .icon{
-    color: #8B8C8D; /* light grey variable */
+    color: #8B8C8D; 
 }
+/*spacing to tabs on app integrate page*/
 .tabs li{
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left:10px;
     background-color: #E5E5E5;
 }
+/* li styles */
 li a{
     color:black;
 }
 li a:hover{
     color:white;
 }
+
+/*********** panel styles */
+    panel h2{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    panel p{
+        width:265px;
+        overflow: auto;
+        height: 110px;
+    }
+    /* icon styles */
+    vicon.icon-6 {
+        font-size: 3rem;
+        line-height: normal;
+    }
+    vicon.icon-5, vicon.icon-4, vicon.icon-3, vicon.icon-2, vicon.icon-1
+    {
+        font-size: 4em;
+    }
+    .progress{
+        width:80%;
+        display: inline-block;
+        text-align: left;
+        margin-left: -40px
+    }
+    .percentage{
+        position: absolute;
+        display: inline-block;
+        line-height: 5px;
+        margin-left: 10px;
+        color: #00A9E0; /* light blue variable*/
+    }
 </style>
 
 
@@ -222,10 +264,12 @@ li a:hover{
         <!-- Angular Source Files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script> 
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-mocks.js"></script>
 
    <!-- Angular Components -->
    <script src="/angularcomponents/src/main.module.js"></script>
+
    <script src="/angularcomponents/src/myapps.module.js"></script>
    <script src="/angularcomponents/src/myapps-fakedata.service.js"></script>
    <script src="/angularcomponents/src/myapps.controller.js"></script>

@@ -446,7 +446,7 @@ $pagination-arrows: true;
 // 27. Progress Bar
 // ----------------
 
-$progress-height: 7px;
+$progress-height: 5px;
 $progress-background: $light-gray;
 $progress-margin-bottom: $global-margin;
 $progress-meter-background: $primary-color;
@@ -519,7 +519,7 @@ $tab-background: $white;
 $tab-background-active: $light-gray;
 $tab-item-font-size: rem-calc(17);
 $tab-item-background-hover: $dark-gray;
-$tab-item-padding: 1.25rem 1.5rem;
+$tab-item-padding: 1rem 1rem;
 $tab-expand-max: 6;
 $tab-content-background: $light-gray;
 $tab-content-border: $light-gray;
