@@ -4,15 +4,17 @@
 
   function tabsDir () {
     function link(scope, elem, attrs) {
-      console.log(elem);
+
       scope.$on('showtab', function(event, data) {
-        if(attrs['id'] == data){
-          console.log(data + " matches id");
+        if(attrs['id'] == data+'title'){
           elem.addClass('is-active');
-        } else {
+        } 
+        else {
           elem.removeClass('is-active');
         }
 
+        angular.element( '.tabs-panel').removeClass('is-active');
+        angular.element( '.tabs-panel' + '#' + data).addClass('is-active');
       });
     }
     
