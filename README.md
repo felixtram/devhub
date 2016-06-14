@@ -24,3 +24,12 @@ Since the project is built, all you have to do is install your local dependencie
 - `foundation watch`
 - Your SCSS will no compile to whereever you want, we have went ahead and created paths to the MAMP theme CSS directory (for both MAC and WIN) for ease. You can change this in the `gulpfile.js` found in the root directory. YASS!
 - If you have an issues you can list commands with `foundation help` or hit up April or Asterisk to drop knowledge upon your head.
+
+## Running the server
+`npm run-script ss
+
+OR
+
+`node ./app.js
+
+server will be available at localhost:8000
