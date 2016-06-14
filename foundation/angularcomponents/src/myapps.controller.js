@@ -7,7 +7,14 @@
     function myappsCtrl(fakeapps){
         var vm = this;
         
-        this.apps = fakeapps.getApps();
+        vm.apps = [];
+        
+      
+        activate();
+
+        function activate() { 
+          fakeapps.fakeApiCall().then(function(res){vm.apps = res.data;});
+        }
     }
     
 })();

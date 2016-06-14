@@ -2,12 +2,20 @@
     
     'use strict';
     angular.module('myapps')
-      .factory('fakeapps', [fakeApps]);
+      .factory('fakeapps', ['$http', fakeApps]);
       
-      function fakeApps(){
+      function fakeApps($http){
           return {
+              fakeApiCall: fakeApiCall,
               getApps: getApps
           };
+
+      /* ----------------------------- */
+
+      
+      function fakeApiCall(){
+        // call will be intercepted by httpBackend defined in main.module.js
+        return $http.get('/myapps');
       }
       
       function getApps(){
@@ -42,6 +50,9 @@
                 ]
           };
       }
+      }
+  
+
       
     
 })();
