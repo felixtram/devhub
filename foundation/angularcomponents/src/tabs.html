@@ -1,17 +1,13 @@
 
 <ul class="tabs">
-    <li class="tabs-title" ng-repeat="name in $ctrl.tabinfo">
-        <a href="" ng-click="$ctrl.activateTab(name.id)"> <h5> {{name.text}} </h5></a>
+    <li class="tabs-title" ng-repeat="name in $ctrl.tabinfo" id="{{name.id}}title">
+        <a href="" ng-click="$ctrl.activateTab(name.id)"> {{name.text}} ({{$ctrl.content[name.id].length}})  </a>
     </li>
 </ul>
 
-<div class="full-row gray">
-	<div class="row gray" data-equalizer>
-
-
-		    <div class="tabs-panel {{name.active}}" tabs-dir ng-repeat="name in $ctrl.tabinfo" id="{{name.id}}">
-		        <panel class="text-center " ng-repeat="item in $ctrl.content[name.id]" app="item"> </panel>
-		    </div>
+<div class="full-row tabs-content">
+		    <div class="tabs-panel {{name.active}} row small-up-1 medium-up-2 large-up-3" tabs-dir ng-repeat="name in $ctrl.tabinfo" id="{{name.id}}">
+		        <panel class="text-center column" ng-repeat="item in $ctrl.content[name.id]" app="item"> </panel>
 
 <!--
 		    <div class="tabs-panel {{name.active}}" tabs-dir ng-repeat="name in $ctrl.tabinfo" id="{{name.id}}">

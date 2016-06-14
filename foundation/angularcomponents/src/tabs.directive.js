@@ -4,6 +4,7 @@
 
   function tabsDir () {
     function link(scope, elem, attrs) {
+      console.log(elem);
       scope.$on('showtab', function(event, data) {
         if(attrs['id'] == data){
           console.log(data + " matches id");
@@ -11,6 +12,7 @@
         } else {
           elem.removeClass('is-active');
         }
+
       });
     }
     
