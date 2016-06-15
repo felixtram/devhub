@@ -329,14 +329,14 @@ panel p{
     height: rem-calc(110);
 }
 .vicons{
-  height: rem-calc(120);
+  height: rem-calc(125);
 }
 .icon{
   color: $medium-gray;
 }
 /* icon styles by the # of icons for 1 app*/
  vicon.icon-2, vicon.icon-1{
-    font-size: 5em;
+    font-size: 4em;
 }
 vicon.icon-3{
     margin-top: rem-calc(20);

@@ -3794,14 +3794,14 @@ panel p {
   height: 6.25rem; }
 
 .vicons {
-  height: 6.81818rem; }
+  height: 7.10227rem; }
 
 .icon {
   color: #8B8C8D; }
 
 /* icon styles by the # of icons for 1 app*/
 vicon.icon-2, vicon.icon-1 {
-  font-size: 5em; }
+  font-size: 4em; }
 
 vicon.icon-3 {
   margin-top: 1.13636rem;
