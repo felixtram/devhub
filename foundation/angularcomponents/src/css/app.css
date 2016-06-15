@@ -3664,7 +3664,7 @@ footer li:first-child {
   font-size: 1rem; }
 
 @media (max-width: 640px) {
-  footer .columns {
+  footer .column, footer .columns {
     text-align: center; }
   footer.full-row .row {
     padding: 15px 0px 0px 0px; } }
