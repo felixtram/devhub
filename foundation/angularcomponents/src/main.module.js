@@ -15,13 +15,13 @@
             "name" : "Short Name",
             "description" : "Bacon ipsum dolor amet capicola pancetta ham hock, shoulder shank bacon swine shankle filet mignon meatball short ribs jowl doner tail. ",
             "percentage" : 10,
-            "suites" : [ "Restaurant bundle", "Retail bundle", "Gift", "Ecommerce bundle (ODP)", "New"]
+            "suites" : [ "Restaurant bundle"]
           },
           {
             "name" : "Longer App Name That Is Longer",
             "description" : "Chicken tri-tip turducken picanha, leberkas pork chop meatball swine frankfurter. Tongue spare ribs t-bone shank rump pork corned beef hamburger ball tip pancetta leberkas. Sausage brisket ham, chuck andouille picanha strip steak fatback rump ground round turducken. Flank shank venison salami.",
             "percentage" : 20,
-            "suites" : [ "Gift", "Ecommerce bundle (ODP)", "Retail bundle"]
+            "suites" : [ "Gift", "Ecommerce bundle (ODP)", "New"]
           },
                     {
             "name" : "Longer App Name That Is Longer",

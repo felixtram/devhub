@@ -3793,22 +3793,26 @@ panel p {
   overflow: auto;
   height: 6.25rem; }
 
+.vicons {
+  height: 6.81818rem; }
+
 .icon {
   color: #8B8C8D; }
 
 /* icon styles by the # of icons for 1 app*/
 vicon.icon-2, vicon.icon-1 {
-  font-size: 4em; }
+  font-size: 5em; }
 
 vicon.icon-3 {
-  /*margin: rem-calc(11);*/
+  margin-top: 1.13636rem;
+  margin-right: 0.28409rem;
+  margin-left: 0.28409rem;
   font-size: 4em;
   display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 1.47727rem 0.22727rem; }
+  display: inline-flex; }
 
 vicon.icon-6, vicon.icon-5, vicon.icon-4 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: normal; }
 
 /* app progress bar*/

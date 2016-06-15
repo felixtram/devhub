@@ -325,25 +325,28 @@ panel h2{
 }
 /* app description*/
 panel p{
-
     overflow: auto;
     height: rem-calc(110);
+}
+.vicons{
+  height: rem-calc(120);
 }
 .icon{
   color: $medium-gray;
 }
 /* icon styles by the # of icons for 1 app*/
  vicon.icon-2, vicon.icon-1{
-    font-size: 4em;
+    font-size: 5em;
 }
 vicon.icon-3{
-    /*margin: rem-calc(11);*/
+    margin-top: rem-calc(20);
+    margin-right: rem-calc(5);
+    margin-left: rem-calc(5);
     font-size:4em;
     display: inline-flex;
-    margin: rem-calc(26) rem-calc(4);
 }
 vicon.icon-6, vicon.icon-5, vicon.icon-4 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: normal;
 }
 /* app progress bar*/
