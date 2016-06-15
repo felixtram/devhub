@@ -13,46 +13,40 @@
         "inprogress" : [
           {
             "name" : "Short Name",
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "description" : "Bacon ipsum dolor amet capicola pancetta ham hock, shoulder shank bacon swine shankle filet mignon meatball short ribs jowl doner tail. ",
             "percentage" : 10,
             "suites" : [ "Restaurant bundle", "Retail bundle", "Gift", "Ecommerce bundle (ODP)", "New"]
           },
           {
             "name" : "Longer App Name That Is Longer",
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "description" : "Chicken tri-tip turducken picanha, leberkas pork chop meatball swine frankfurter. Tongue spare ribs t-bone shank rump pork corned beef hamburger ball tip pancetta leberkas. Sausage brisket ham, chuck andouille picanha strip steak fatback rump ground round turducken. Flank shank venison salami.",
             "percentage" : 20,
             "suites" : [ "Gift", "Ecommerce bundle (ODP)", "Retail bundle"]
           },
                     {
             "name" : "Longer App Name That Is Longer",
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "description" : "Sirloin short loin cow, filet mignon meatloaf turducken shank andouille swine landjaeger leberkas beef. Doner tail rump, spare ribs drumstick ham hamburger pork belly pork jerky biltong short ribs. Ham hock chuck tri-tip, pork belly andouille sirloin landjaeger jowl alcatra shank cow. Chuck pork chop brisket strip steak..",
             "percentage" : 20,
             "suites" : [ "Gift", "Ecommerce bundle (ODP)", "Retail bundle", "New"]
           },
           {
             "name" : "Longer App Name That Is Longer",
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "description" : "Kevin swine pork belly porchetta spare ribs beef, prosciutto beef ribs shoulder tongue short ribs ham. Sausage shoulder meatloaf tenderloin ball tip jowl shankle meatball pig. Swine corned beef turkey sirloin shoulder, filet mignon tenderloin tail. Kielbasa chicken sirloin, frankfurter pork filet mignon alcatra doner fatback turducken t-bone beef capicola. Flank pork belly leberkas, meatball ball tip filet mignon beef corned beef porchetta cow boudin turducken. Landjaeger tri-tip leberkas andouille chuck rump. Filet mignon drumstick t-bone shoulder.",
             "percentage" : 20,
             "suites" : [ "Gift"]
-          },
-          {
-            "name" : "Create New App",
-            "description" : "Click here to create your application and start development",
-            "percentage" : 0,
-            "suites" : ["New"]
           }
         ],
         "completed" : [
           {
             "name" : "Lots Of Icons",
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "description" : "Bacon ipsum dolor amet capicola pancetta ham hock, shoulder shank bacon swine shankle filet mignon meatball short ribs jowl doner tail. ",
             "percentage" : 100,
             "suites" : [ "Retail bundle", "Retail Element", "Gift", "Ecommerce DevHub", "ODP Ecommerce"]
           }, 
           {
 
             "name" : "Completed App",
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "description" : "Bacon ipsum dolor amet capicola pancetta ham hock, shoulder shank bacon swine shankle filet mignon meatball short ribs jowl doner tail. ",
             "percentage" : 100,
             "suites" : [ "Restaurant bundle", "Retail bundle"]
           }

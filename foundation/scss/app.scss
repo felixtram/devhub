@@ -358,16 +358,16 @@ vicon.icon-6, vicon.icon-5, vicon.icon-4, vicon.icon-3 {
     color: $light-blue;
 }
 /* create new app style this will change*/
-#inprogress panel:last-child, #inprogress panel:last-child .callout{
+panel:last-child, panel:last-child .callout{
   background-color: $light-gray;
 }
-#inprogress panel:last-child .callout{
+panel:last-child .callout{
   border-style: dashed;
   border-color: $light-blue;
 }
-#inprogress panel:last-child .percentage{
-  color: $light-gray;
+panel:last-child .percentage{
+  display: none;
 }
-#inprogress panel:last-child .icon{
+panel:last-child .icon{
   color: $light-blue;
 }

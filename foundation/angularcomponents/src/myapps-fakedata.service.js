@@ -32,12 +32,6 @@
             "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "percentage" : 20,
             "suites" : [ "Gift", "Ecommerce bundle (ODP)"]
-          },
-          {
-            "name" : "Create New App",
-            "description" : "Click here to create your application and start development",
-            "percentage" : 0,
-            "suites" : ["New"]
           }
         ],
         "completed" : [
