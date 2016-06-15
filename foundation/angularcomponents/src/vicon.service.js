@@ -20,7 +20,9 @@
               "Gift - Litle" : "icon vantiv-gift",
               "Ecommerce bundle (ODP)" : "icon vantiv-laptop",
               "ODP Ecommerce" : "icon vantiv-laptop",
-              "Ecommerce DevHub" : "icon vantiv-laptop"
+              "Ecommerce DevHub" : "icon vantiv-laptop",
+              "New" : "icon vantiv-plus"
+
               // Ecommerce DevHub, Ecommerce bundle(ODP)
           };
       }

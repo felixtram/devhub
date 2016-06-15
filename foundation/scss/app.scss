@@ -301,7 +301,15 @@ footer li:first-child {
 }
 /* set icon color to light grey variable */
 .icon{
-  color: #8B8C8D;
+  color: $medium-gray;
+}
+.tabs li a{
+    color: white;
+    background-color: $medium-gray;
+}
+.tabs li.is-active a{
+    color: black;
+    background-color: $light-gray;
 }
 
 /*********** panel styles */
@@ -327,13 +335,15 @@ panel p{
     height: 110px;
 }
 /* icon styles by the # of icons for 1 app*/
-vicon.icon-6 {
+ vicon.icon-2, vicon.icon-1{
+    font-size: 4em;
+}
+vicon.icon-3{
+    margin: 11px;
+}
+vicon.icon-6, vicon.icon-5, vicon.icon-4, vicon.icon-3 {
     font-size: 3rem;
     line-height: normal;
-}
-vicon.icon-5, vicon.icon-4, vicon.icon-3, vicon.icon-2, vicon.icon-1
-{
-    font-size: 4em;
 }
 /* app progress bar*/
 .progress{
@@ -347,4 +357,18 @@ vicon.icon-5, vicon.icon-4, vicon.icon-3, vicon.icon-2, vicon.icon-1
     line-height: 5px;
     margin-left: 10px;
     color: $light-blue;
+}
+/* create new app style this will change*/
+#inprogress panel:last-child, #inprogress panel:last-child .callout{
+  background-color: $light-gray;
+}
+#inprogress panel:last-child .callout{
+  border-style: dashed;
+  border-color: $light-blue;
+}
+#inprogress panel:last-child .percentage{
+  color: $light-gray;
+}
+#inprogress panel:last-child .icon{
+  color: $light-blue;
 }
