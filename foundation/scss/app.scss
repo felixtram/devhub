@@ -320,7 +320,6 @@ panel h2{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
     font-weight: 400;
 }
 /* app description*/
@@ -336,7 +335,7 @@ panel p{
 }
 /* icon styles by the # of icons for 1 app*/
  vicon.icon-2, vicon.icon-1{
-    font-size: 4em;
+    font-size: 5em;
 }
 vicon.icon-3{
     margin-top: rem-calc(20);
