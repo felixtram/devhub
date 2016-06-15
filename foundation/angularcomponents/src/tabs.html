@@ -1,6 +1,6 @@
 
 <ul class="tabs">
-    <li class="tabs-title" ng-repeat="name in $ctrl.tabinfo" tabs-dir id="{{name.id}}title">
+    <li class="tabs-title gray" ng-repeat="name in $ctrl.tabinfo" tabs-dir id="{{name.id}}title">
         <a href="" ng-click="$ctrl.activateTab(name.id)"> {{name.text}} ({{$ctrl.content[name.id].length}})  </a>
     </li>
 </ul>

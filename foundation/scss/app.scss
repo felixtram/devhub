@@ -129,7 +129,11 @@
   }
 }
 
-
+@media (max-width: 640px) {
+  .full-row{
+    background-blend-mode: overlay;
+  }
+}
 .button{
   text-transform: uppercase;
 }
@@ -147,8 +151,6 @@
 .dark-gray {
   @include row-colors($white, $dark-gray, $white, $white, $primary-color);
 }
-
-
 .is-stuck{
   @include global-shadow;
 }
@@ -167,7 +169,6 @@
     margin: 0 1rem 1rem 1rem;
   }
 }
-
 .devhub-callout:hover {
   @include callout-style($primary-color);
   p, h1,h2,h3,h4,h5,h6,li {
@@ -178,18 +179,12 @@
   }
 }
 
-//*********************************
-//.02 - HOMEPAGE CUSTOM STYLES 
-//*********************************
-
+//Global footer styles
 footer li:first-child {
     font-weight: bold;
     font-size: 1rem;
 }
 @media (max-width: 640px) {
-  .full-row{
-    background-blend-mode: overlay;
-  }
   footer .columns{
     text-align:center;
   }
@@ -197,6 +192,10 @@ footer li:first-child {
     padding: 15px 0px 0px 0px;
   }
 }
+
+//*********************************
+//.02 - HOMEPAGE CUSTOM STYLES 
+//*********************************
 
 //the following classes build out the responsive banner header
 .banner-wrap {
@@ -266,4 +265,86 @@ footer li:first-child {
           max-width: 100%;
       }
   }
+}
+
+
+//*********************************
+//.02 - APP INTEGRATE CUSTOM STYLES 
+//*********************************
+
+/* style for welcome message */
+.welcome{
+    margin:auto auto; /* center content */
+    padding-right:5%; 
+    padding-left:5%;
+}
+/* height for app header */
+.appheader{
+    min-height: 400px; 
+    display:inline-flex; /* allows vertical alignemnt of .welcome */
+}
+
+/* Asterisk, should button margin be global? */
+.welcome .primary.button{
+    margin: 8px; /* padding for buttons in appheader */
+}
+/* display tabs in the center */
+.tabs{
+    margin:auto;
+    display: table; 
+    border: none;
+}
+/*spacing to tabs on app integrate page*/
+.tabs li{
+    margin-right: 10px;
+    margin-left:10px;
+}
+/* set icon color to light grey variable */
+.icon{
+  color: #8B8C8D;
+}
+
+/*********** panel styles */
+/* size of one app box*/
+.callout{
+    width:300px;
+    height:350px;
+    display: inline-block;
+}
+/* control size of app title*/
+panel h2{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px; /*global h2 size seems bigger than the moce*/
+    font-weight: 400;
+}
+/* app description*/
+panel p{
+    font-size: 15px; /*global p size seems bigger than the mock*/
+    width:265px;
+    overflow: auto;
+    height: 110px;
+}
+/* icon styles by the # of icons for 1 app*/
+vicon.icon-6 {
+    font-size: 3rem;
+    line-height: normal;
+}
+vicon.icon-5, vicon.icon-4, vicon.icon-3, vicon.icon-2, vicon.icon-1
+{
+    font-size: 4em;
+}
+/* app progress bar*/
+.progress{
+    width:80%;
+    display: inline-block;
+    margin-left: -40px /* makes room for the percent*/
+}
+.percentage{
+    position: absolute;
+    display: inline-block;
+    line-height: 5px;
+    margin-left: 10px;
+    color: $light-blue;
 }
