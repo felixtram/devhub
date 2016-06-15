@@ -25,7 +25,7 @@
             "name" : "Short Name",
             "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "percentage" : 10,
-            "suites" : [ "Restaurant bundle", "Retail bundle", "Gift", "Ecommerce bundle (ODP)"]
+            "suites" : [ "Restaurant bundle", "Retail bundle", "Gift", "Ecommerce DevHub", "New"]
           },
           {
             "name" : "Longer App Name That Is Longer",
@@ -45,7 +45,7 @@
             "name" : "Lots Of Icons",
             "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "percentage" : 100,
-            "suites" : [ "Retail bundle", "Retail Element", "Gift", "Ecommerce bundle", "ODP Ecommerce", "Ecommerce DevHub"]
+            "suites" : [ "Retail bundle", "Retail Element", "Gift", "Ecommerce bundle", "ODP Ecommerce"]
           }, {
 
             "name" : "Completed App",

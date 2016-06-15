@@ -299,10 +299,6 @@ footer li:first-child {
     margin-right: 10px;
     margin-left:10px;
 }
-/* set icon color to light grey variable */
-.icon{
-  color: $medium-gray;
-}
 .tabs li a{
     color: white;
     background-color: $medium-gray;
@@ -333,6 +329,9 @@ panel p{
     width:265px;
     overflow: auto;
     height: 110px;
+}
+.icon{
+  color: $medium-gray;
 }
 /* icon styles by the # of icons for 1 app*/
  vicon.icon-2, vicon.icon-1{
