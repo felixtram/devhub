@@ -3671,7 +3671,7 @@ footer li:first-child {
 
 .banner-wrap {
   width: 100%;
-  min-height: 400px;
+  min-height: 22.72727rem;
   position: relative;
   display: block;
   background-size: cover;
@@ -3745,7 +3745,7 @@ footer li:first-child {
 
 /* height for app header */
 .appheader {
-  min-height: 400px;
+  min-height: 22.72727rem;
   display: -ms-inline-flexbox;
   display: inline-flex;
   /* allows vertical alignemnt of .welcome */ }
@@ -3763,8 +3763,8 @@ footer li:first-child {
 
 /*spacing to tabs on app integrate page*/
 .tabs li {
-  margin-right: 10px;
-  margin-left: 10px; }
+  margin-right: 0.56818rem;
+  margin-left: 0.56818rem; }
 
 .tabs li a {
   color: white;
@@ -3777,8 +3777,8 @@ footer li:first-child {
 /*********** panel styles */
 /* size of one app box*/
 .callout {
-  width: 300px;
-  height: 350px;
+  width: 17.04545rem;
+  height: 19.88636rem;
   display: inline-block; }
 
 /* control size of app title*/
@@ -3786,17 +3786,12 @@ panel h2 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 20px;
-  /*global h2 size seems bigger than the moce*/
   font-weight: 400; }
 
 /* app description*/
 panel p {
-  font-size: 15px;
-  /*global p size seems bigger than the mock*/
-  width: 265px;
   overflow: auto;
-  height: 110px; }
+  height: 6.25rem; }
 
 .icon {
   color: #8B8C8D; }
@@ -3806,9 +3801,13 @@ vicon.icon-2, vicon.icon-1 {
   font-size: 4em; }
 
 vicon.icon-3 {
-  margin: 11px; }
+  /*margin: rem-calc(11);*/
+  font-size: 4em;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 1.47727rem 0.22727rem; }
 
-vicon.icon-6, vicon.icon-5, vicon.icon-4, vicon.icon-3 {
+vicon.icon-6, vicon.icon-5, vicon.icon-4 {
   font-size: 3rem;
   line-height: normal; }
 
@@ -3816,13 +3815,14 @@ vicon.icon-6, vicon.icon-5, vicon.icon-4, vicon.icon-3 {
 .progress {
   width: 80%;
   display: inline-block;
-  margin-left: -40px; }
+  margin-left: -2.27273rem;
+  /* makes room for the percent*/
+  margin-bottom: 0%; }
 
 .percentage {
   position: absolute;
   display: inline-block;
-  line-height: 5px;
-  margin-left: 10px;
+  margin-left: 0.56818rem;
   color: #00A9E0; }
 
 /* create new app style this will change*/

@@ -200,7 +200,7 @@ footer li:first-child {
 //the following classes build out the responsive banner header
 .banner-wrap {
     width: 100%;
-    min-height: 400px;
+    min-height: rem-calc(400);
     position: relative;
     display: block;
     background-size: cover;
@@ -280,7 +280,7 @@ footer li:first-child {
 }
 /* height for app header */
 .appheader{
-    min-height: 400px; 
+    min-height: rem-calc(400); 
     display:inline-flex; /* allows vertical alignemnt of .welcome */
 }
 
@@ -296,8 +296,8 @@ footer li:first-child {
 }
 /*spacing to tabs on app integrate page*/
 .tabs li{
-    margin-right: 10px;
-    margin-left:10px;
+    margin-right: rem-calc(10);
+    margin-left: rem-calc(10);
 }
 .tabs li a{
     color: white;
@@ -311,8 +311,8 @@ footer li:first-child {
 /*********** panel styles */
 /* size of one app box*/
 .callout{
-    width:300px;
-    height:350px;
+    width:rem-calc(300);
+    height:rem-calc(350);
     display: inline-block;
 }
 /* control size of app title*/
@@ -320,15 +320,14 @@ panel h2{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 20px; /*global h2 size seems bigger than the moce*/
+
     font-weight: 400;
 }
 /* app description*/
 panel p{
-    font-size: 15px; /*global p size seems bigger than the mock*/
-    width:265px;
+
     overflow: auto;
-    height: 110px;
+    height: rem-calc(110);
 }
 .icon{
   color: $medium-gray;
@@ -338,9 +337,12 @@ panel p{
     font-size: 4em;
 }
 vicon.icon-3{
-    margin: 11px;
+    /*margin: rem-calc(11);*/
+    font-size:4em;
+    display: inline-flex;
+    margin: rem-calc(26) rem-calc(4);
 }
-vicon.icon-6, vicon.icon-5, vicon.icon-4, vicon.icon-3 {
+vicon.icon-6, vicon.icon-5, vicon.icon-4 {
     font-size: 3rem;
     line-height: normal;
 }
@@ -348,13 +350,13 @@ vicon.icon-6, vicon.icon-5, vicon.icon-4, vicon.icon-3 {
 .progress{
     width:80%;
     display: inline-block;
-    margin-left: -40px /* makes room for the percent*/
+    margin-left: rem-calc(-40); /* makes room for the percent*/
+    margin-bottom: 0%;
 }
 .percentage{
     position: absolute;
     display: inline-block;
-    line-height: 5px;
-    margin-left: 10px;
+    margin-left: rem-calc(10);
     color: $light-blue;
 }
 /* create new app style this will change*/
