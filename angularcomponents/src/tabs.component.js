@@ -8,7 +8,7 @@
         content: '='
       },
       controller: 'tabsCtrl',
-      templateUrl: '/angularcomponents/src/tabs.html'
+      templateUrl: 'angularcomponents/src/tabs.html'
     });
 
 })();

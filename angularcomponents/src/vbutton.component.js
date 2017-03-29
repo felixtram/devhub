@@ -8,7 +8,7 @@
         link: '@', 
         displaytext: '@'
       },
-      templateUrl: '/angularcomponents/src/vbutton.html'
+      templateUrl: 'angularcomponents/src/vbutton.html'
     });
 
 })();

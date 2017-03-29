@@ -7,7 +7,7 @@
       bindings: {
         testsuites: '='
       },
-      templateUrl: '/angularcomponents/src/vicons.html'
+      templateUrl: 'angularcomponents/src/vicons.html'
     });
 
 })();

@@ -8,7 +8,7 @@
         testsuite: '@'
       },
       controller: 'viconCtrl',
-      templateUrl: '/angularcomponents/src/vicon.html'
+      templateUrl: 'angularcomponents/src/vicon.html'
     });
 
 })();
