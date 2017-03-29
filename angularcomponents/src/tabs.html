@@ -1,0 +1,22 @@
+
+<ul class="tabs">
+    <li ng-repeat="name in $ctrl.tabinfo" tabs-dir id="{{name.id}}title" class="tabs-title {{name.active}}" >
+        <a href="" ng-click="$ctrl.activateTab(name.id)"> {{name.text}} ({{$ctrl.content[name.id].length}})  </a>
+    </li>
+</ul>
+
+<div class="full-row tabs-content">
+    <div class="tabs-panel {{name.active}} row small-up-1 medium-up-2 large-up-3" ng-repeat="name in $ctrl.tabinfo" id="{{name.id}}">
+    
+        <panel class="text-center column" ng-repeat="item in $ctrl.content[name.id]" app="item"> </panel>
+
+        <panel class="text-center column" app='           {
+            "name" : "Create New App",
+            "description" : "Click here to create your application and start development",
+            "percentage" : 0,
+            "suites" : ["New"]
+          }'>
+          </panel>
+	</div>
+</div>
+

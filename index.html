@@ -1,0 +1,402 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <div class="full-row blue">
+    <div data-sticky-container>
+      <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+        <div class="title-bar-title">
+          <h2>Title Bar Menu</h2>(title) with sticky container
+        </div>
+        <div class="title-bar-right show-for-medium">
+          <ul class="menu">
+            <li><a href="#">Link One</a></li>
+            <li><a href="#">Link Two</a></li>
+            <li><a href="#">Link Three</a></li>
+            <li><a href="#" class="secondary button">Secondary Button</a></li>
+            <li><a href="#" class="secondary hollow button">Secondary Hollow Btn</a></li>
+          </ul>
+        </div>
+        <a data-open="exampleModal1" class="title-bar-right show-for-small-only">Click me for a modal</a>
+      </div>
+    </div>
+    <!--THIS IS MENU MODAL-->
+    <div class="reveal" id="exampleModal1" data-reveal>
+      <ul class="menu vertical">
+        <li><a href="#">Link One</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#" class="secondary button">Secondary Button</a></li>
+        <li><a href="#" class="secondary hollow button">Secondary Hollow Button</a></li>
+      </ul>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="row"></div>
+
+  <div class="full-row blue">
+    <div class="top-bar">
+      <div class="top-bar-title">
+        <h2>Top Bar (title) Responsive Menu</h2>non-sticky
+      </div>
+      <div data-responsive-toggle="responsive-menu" data-hide-for="medium">
+        <button class="menu-icon float-right" type="button" data-toggle></button>
+      </div>
+      <div id="responsive-menu">
+        <div class="top-bar-right stacked-for-small">
+          <ul class=" menu blue">
+            <li><a href="#">Link One</a></li>
+            <li><a href="#">Link Two</a></li>
+            <li><a href="#">Link Three</a></li>
+            <li><a href="#" class="secondary button hide-for-small-only">Secondary Button</a></li>
+            <li><a href="#" class="secondary hollow button hide-for-small-only">Secondary Hollow</a></li>
+            <li><a href="#" class="show-for-small-only">Sign Up</a></li>
+            <li><a href="#" class="show-for-small-only">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row"></div>
+
+  <div class="full-row blue banner-wrap">
+    <div class="row">
+      <div class="small-12 medium-8 large-6 column banner-text">
+        <h1>Banner Text</h1>
+        <p>
+          Div class of small-12 medium-8 large-6 column to keep the text contained within the left side of the screen.</p>
+      </div>
+      <div class="small-12 medium-4 large-6 column">
+        <p></p>
+      </div>
+      <div class="small-12 medium-4 large-6 column gray">
+        <h1>Not Banner Text</h1>
+        <p>Here is the other section content that is behind the banner, </br> this is where a background image can be placed</p>
+      </div>
+      <div class="banner-container"></div>
+
+    </div>
+  </div>
+
+  <div class="row small-up-1 medium-up-2 large-up-3">
+    <div class="column">
+      <object data="/img/devhub-logo-grad.svg" type="image/svg+xml">
+        <img src="/img/logo.png" />
+      </object>
+            <object data="/img/devhub-logo-black.svg" type="image/svg+xml">
+        <img src="/img/logo.png" />
+      </object>
+            <object data="/img/devhub-logo.svg" type="image/svg+xml">
+        <img src="/img/logo.png" />
+      </object>
+    </div>
+    <div class="column">
+      <object data="/img/devhub-stacked-logo.svg" type="image/svg+xml">
+        <img src="/img/logo.png" />
+      </object>
+    </div>
+  </div>
+
+  <div class="row gray">
+    <div class="large-12 columns">
+      <h1>Row Gray</h1>
+
+
+      <div class="small-12 large-6 column">
+        <p>The devhub-callout class</p>
+        <div class="devhub-callout">
+          <img src="img/imac-guy.jpg">
+          <p>Using the devhub class callout. Hover the mouse over this section to see the effect</p>
+        </div>
+      </div>
+      <div class="small-12 large-6 column">
+        <p>An example of a submit form</p>
+        <form>
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+          <textarea rows="4" placeholder="Message"></textarea>
+          <input type="submit" class="button float-right" value="Submit Form">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row med-gray">
+    <div class="large-12 columns">
+      <h1>Row Medium Gray</h1>
+      <div class="large-6 medium-6 columns">
+        <div class="secondary callout">
+          <p>Six columns section in a row. This is a div within class row that is made up of six columns for large and medium
+            screen sizes.</p>
+          <p>Within the div of class "columns" there is another div of class secondary callout that creates a border around
+            the sections.</p>
+        </div>
+      </div>
+      <div class="large-6 medium-6 columns">
+        <div class="secondary callout">
+          <p>Six columns section in a row. This will change to 12 columns for small screen sizes only.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row dark-gray">
+    <div class="large-12 columns">
+      <h1>Row Dark Gray</h1>
+      <div class="large-4 medium-4 small-4 columns">
+        <div class="callout">
+          <p>Four columns of class callout (without data equalizer applied)</p>
+        </div>
+      </div>
+      <div class="large-4 medium-4 small-4 columns">
+        <div class="callout">
+          <p>The total number of columns must add up to 12 (3 sections each containing 4 columns)</p>
+        </div>
+      </div>
+      <div class="large-4 medium-4 small-4 columns">
+        <div class="callout">
+          <p>Here, the 4 columns are applied to large, medium and small screen sizes.</p>
+          <p>Notice how the sections vary in size depending on the amount of content each one stores.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row blue">
+    <div class="large-12 columns">
+      <h1>Row Blue</h1>
+      <div class="callout">
+        <p><strong>This is a twelve column section in a row.</strong></p>
+        <p>Each of these includes a div.callout element so you can see where the columns are - it's not required at all for
+          the grid.</p>
+      </div>
+      <div class="callout">
+        <p><strong>Another twelve column section in a row.</strong></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row gray" data-equalizer>
+    <div class="large-12 columns">
+      <h1>Data Equalizer</h1>
+      <p>Demonstrating data equalizer with devhub-callout class using three 4-column sections.The sections will always be equal
+        to each other in size.</p>
+      <a href="#">
+        <div class="small-12  medium-4 columns text-center">
+          <div class="devhub-callout" data-equalizer-watch>
+            <img src="img/cactus-lady.jpg">
+            <h3>Getting Started</h3>
+            <p>Example, with some medium amount of content placed within this section. Try resizing the screen.</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="small-12 medium-4 columns text-center">
+          <div class="devhub-callout" data-equalizer-watch>
+            <img src="img/imac-guy.jpg">
+            <h3>Need a Reference?</h3>
+            <p>Here is a lot of content: Quick Call to Action goes her. Apllication description 14px. Nam quam libero, egestas
+              in pretium at, consectetur eget.</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="small-12 medium-4 columns text-center">
+          <div class="devhub-callout" data-equalizer-watch>
+            <img src="img/sitting-laptop-lady.jpg">
+            <h3>FAQs and Support</h3>
+            <p>This doesn't have a lot of content.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row med-gray">
+    <div class="large-12 columns">
+      <h1>Vantiv brand colors</h1>
+      <a href="#" class="button">Primary Button</a>
+      <a href="#" class="success button">Success Button</a>
+      <a href="#" class="alert button">Alert Button</a>
+      <a href="#" class="warning button">Warning Button</a>
+      <a href="#" class="secondary button">Secondary Button</a>
+      <a href="#" class="secondary hollow button">Secondary Hollow Btn</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="callout">
+        <h3>We&rsquo;re stoked you want to try Foundation! </h3>
+        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy
+          to get going.</p>
+        <p>Once you've exhausted the fun in this document, you should check out:</p>
+        <div class="row">
+          <div class="large-4 medium-4 columns">
+            <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about
+              using the framework.</p>
+          </div>
+          <div class="large-4 medium-4 columns">
+            <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you
+              a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
+          </div>
+          <div class="large-4 medium-4 columns">
+            <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question
+              or show off your knowlege.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 medium-4 medium-push-2 columns">
+            <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature
+              requests and more.</p>
+          </div>
+          <div class="large-4 medium-4 medium-pull-2 columns">
+            <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions.
+              When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="large-8 medium-8 columns">
+      <h5>Here&rsquo;s your basic grid:</h5>
+      <!-- Grid Example -->
+
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="primary callout">
+            <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you
+              can see where the columns are - it's not required at all for the grid.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 medium-6 columns">
+          <div class="primary callout">
+            <p>Six columns</p>
+          </div>
+        </div>
+        <div class="large-6 medium-6 columns">
+          <div class="primary callout">
+            <p>Six columns</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="primary callout">
+            <p>Four columns</p>
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="primary callout">
+            <p>Four columns</p>
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 columns">
+          <div class="primary callout">
+            <p>Four columns</p>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+      <form>
+        <div class="row">
+          <div class="large-12 columns">
+            <label>Input Label</label>
+            <input type="text" placeholder="large-12.columns" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 medium-4 columns">
+            <label>Input Label</label>
+            <input type="text" placeholder="large-4.columns" />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <label>Input Label</label>
+            <input type="text" placeholder="large-4.columns" />
+          </div>
+          <div class="large-4 medium-4 columns">
+            <div class="row collapse">
+              <label>Input Label</label>
+              <div class="input-group">
+                <input type="text" placeholder="small-9.columns" class="input-group-field" />
+                <span class="input-group-label">.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <label>Select Box</label>
+            <select>
+                <option value="husker">Husker</option>
+                <option value="starbuck">Starbuck</option>
+                <option value="hotdog">Hot Dog</option>
+                <option value="apollo">Apollo</option>
+              </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 medium-6 columns">
+            <label>Choose Your Favorite</label>
+            <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
+            <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+          </div>
+          <div class="large-6 medium-6 columns">
+            <label>Check these out</label>
+            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <label>Textarea Label</label>
+            <textarea placeholder="small-12.columns"></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="large-4 medium-4 columns">
+      <h5>Try one of these buttons:</h5>
+      <p><a href="#" class="button">Simple Button</a><br/>
+        <a href="#" class="success button">Success Btn</a><br/>
+        <a href="#" class="alert button">Alert Btn</a><br/>
+        <a href="#" class="secondary button">Secondary Btn</a></p>
+      <div class="callout">
+        <h5>So many components, girl!</h5>
+        <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on
+          making them your own.</p>
+        <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

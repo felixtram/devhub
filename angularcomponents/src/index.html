@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta charset="UTF-8">
+        <title>App Integrate Prototype</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    
+    <body ng-app="myapps">
+        <div ng-controller="myappsCtrl as ctrl">
+            <appheader></appheader>
+            <tabs tabinfo='[{"id" : "inprogress", "text" : "In Progress", active: "is-active"},
+                {"id" : "completed", "text" : "Completed", active: ""}]' content="ctrl.apps">
+            </tabs>
+        </div>
+        <!-- Angular Source Files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script> 
+        
+        <!-- Foundation Source Files -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js"></script>
+       <!-- Angular Components -->
+       <script src="myapps.module.js"></script>
+       <script src="myapps-fakedata.service.js"></script>
+       <script src="myapps.controller.js"></script>
+       <script src="tabs.controller.js"> </script>
+       <script src="tabs.directive.js"> </script>
+       <script src="tabs.component.js"> </script>
+       <script src="vbutton.component.js"></script>
+       <script src="vprogress.component.js"></script>
+       <script src="vicon.service.js"></script>
+       <script src="vicon.controller.js"></script>
+       <script src="vicon.component.js"></script>
+       <script src="vicons.component.js"></script>
+       <script src="panel.component.js"> </script>
+       <script src="appheader.component.js"> </script>
+       <script> $(document).foundation(); </script>
+   </body>
+</html>
+
