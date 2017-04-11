@@ -9,7 +9,8 @@
   // an actual backend
   angular.module('mainmod', ['myapps', 'ngMockE2E'])
     .run(function($httpBackend){
-"inprogress" : [
+      var apps = {
+        "inprogress" : [
           {
             "name" : "Short Name",
             "description" : " At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non",
